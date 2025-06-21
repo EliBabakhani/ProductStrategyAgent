@@ -6,11 +6,11 @@ authors = [
     {name = "Elnaz Babakhani", email = "eli.bkhni@gmail.com"}
 ]
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.10,<3.12"
 license = "Apache License 2.0"
 
 [tool.poetry.dependencies]
-python = ">=3.12"
+python = ">=3.10,<3.12"
 requests = "^2.31.0"
 google-adk = "^1.4.2"
 pydantic = "^2.11.3"
@@ -30,4 +30,5 @@ cleanup = "deployment.cleanup:cleanup_deployment"
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
- 
+[tool.poetry]
+packages = [{ include = "multi_tool_agent" }]
